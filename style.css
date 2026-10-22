@@ -1,0 +1,569 @@
+/* General Styles */
+:root {
+    /* Change this one color to change the main color of the whole website */
+    --main-color: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0f172a;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Stops the sticky menu from covering section titles when you click a link */
+section {
+    scroll-margin-top: 80px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+.btn-whatsapp {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    color: #ffffff;
+    margin: 15px 0 30px 0;
+}
+
+.btn-whatsapp:hover {
+    background-color: #15803d;
+    border-color: #15803d;
+}
+
+/* Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+.menu-button {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 580px;
+}
+
+.small-title {
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #60a5fa;
+    margin: 0 0 20px 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-image img {
+    width: 340px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid var(--main-color);
+    display: block;
+}
+
+/* About */
+.about {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    font-size: 18px;
+    color: #475569;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background-color: #eff6ff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    color: var(--main-color);
+    font-size: 28px;
+    margin: 0 0 5px 0;
+}
+
+.stat-box p {
+    margin: 0;
+    color: #475569;
+}
+
+/* Services */
+.services {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid var(--main-color);
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #475569;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background-color: #e2e8f0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 8px 0 0 0;
+    font-size: 19px;
+}
+
+.tag {
+    background-color: #eff6ff;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Nuvix Media */
+.nuvix {
+    padding: 80px 0;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.nuvix-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nuvix-logo-box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 320px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.nuvix-logo-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nuvix-text h2 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+.nuvix-subtitle {
+    color: #60a5fa;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.nuvix-text ul {
+    margin-bottom: 25px;
+}
+
+.nuvix-text li {
+    padding: 4px 0;
+    color: #cbd5e1;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #475569;
+    margin: -20px 0 40px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-message {
+    margin: 15px 0 0 0;
+    font-weight: bold;
+}
+
+.success {
+    color: #16a34a;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.contact-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.contact-details p {
+    margin: 0 0 5px 0;
+}
+
+.contact-details a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.contact-details .btn-whatsapp {
+    color: #ffffff;
+}
+
+.social-links li {
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 50px 0 25px 0;
+    text-align: center;
+}
+
+.footer-logo-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.footer-logo-box img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+footer h3 {
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 0;
+    color: #60a5fa;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+footer .copyright {
+    color: #94a3b8;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+}
+
+/* Mobile (tablets and phones) */
+@media (max-width: 768px) {
+
+    /* Show the hamburger button and hide the links until it is clicked */
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    /* This class is added by JavaScript when the button is clicked */
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+        height: 340px;
+    }
+
+    .stats,
+    .card-grid,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nuvix-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nuvix-logo-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
